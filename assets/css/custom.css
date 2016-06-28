@@ -59,6 +59,42 @@ MAIN CONTENT
 
 /*
 ---------------------------------------------------
+PROJECTS VIEW
+---------------------------------------------------
+*/
+.image-block {
+    border: 3px solid transparent;
+    background-color: rgba(3, 3, 3, 0.0);
+    padding: 0px;
+    margin: 0px;
+    height: 200px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.image-block > p {
+    height: 100%;
+    font-weight: normal;
+    font-size: 19px;
+    padding-top: 150px;
+    background-color: rgba(3, 3, 3, 0.0);
+    color: rgba(6, 6, 6, 0.0);
+}
+
+.image-block:hover > p {
+    background-color: rgba(3, 3, 3, 0.5);
+    color: white;
+}
+
+#imageTiles{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*
+---------------------------------------------------
 MEDIA QUERIES
 ---------------------------------------------------
 */
