@@ -1,0 +1,79 @@
+/*
+---------------------------------------------------
+BLOBAL STYLES
+---------------------------------------------------
+*/
+
+html,body
+{
+    height: 100%;
+}
+
+#mainContainer {
+    background-color: gray;
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+#mainRow{
+    height: 100%;
+    display: table-row;
+}
+
+#navigationColumn {
+    background-color: aqua;
+    float: none;
+    display: table-cell;
+}
+
+#mainContentColumn {
+    background-color: blue;
+    float: none;
+    display: table-cell;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/*
+---------------------------------------------------
+NAVIGATION
+---------------------------------------------------
+*/
+
+
+
+/*
+---------------------------------------------------
+MEDIA QUERIES
+---------------------------------------------------
+*/
+
+/* Portrait and landscape phone */
+
+@media(max-width: 480px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+
+@media(max-width: 768px) {
+
+}
+
+
+/* Up to small desktop */
+
+@media(max-width: 979px) {
+
+}
+
+
+/*Large desktop */
+
+@media(min-width: 1200px) {
+
+}
