@@ -38,6 +38,7 @@ NAVIGATION
 
 #navColumn {
     background-color: #0a1e86;
+    align-items: center;
 }
 
 .icon-bar {
@@ -77,6 +78,9 @@ MEDIA QUERIES
         display: block;
         flex-wrap: wrap;
     }
+    #navColumn{
+        align-items: stretch;
+    }
 }
 
 
@@ -90,13 +94,9 @@ MEDIA QUERIES
 /*Large desktop */
 
 @media(max-width: 1100px) {
-    #navColumn{
-    font-size:30px;
-    }
+
 }
 
 @media(min-width: 1150px) {
-    #navColumn{
-        font-size:60px;
-    }
+
 }
