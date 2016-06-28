@@ -29,18 +29,22 @@ body {
     flex-direction: column;
 }
 
+#navigationColumn {
+    background-color: #2A375C;
+    align-items: center;
+}
+
+#mainContentColumn {
+    background-color: #EBEFFA;
+}
+
+
 
 /*
 ---------------------------------------------------
 NAVIGATION
 ---------------------------------------------------
 */
-
-#navColumn {
-    background-color: #0a1e86;
-    align-items: center;
-}
-
 .icon-bar {
     background-color: black;
 }
@@ -51,10 +55,6 @@ NAVIGATION
 MAIN CONTENT
 ---------------------------------------------------
 */
-
-#mainContentColumn {
-    background-color: aqua;
-}
 
 
 /*
@@ -78,7 +78,7 @@ MEDIA QUERIES
         display: block;
         flex-wrap: wrap;
     }
-    #navColumn{
+    #navigationColumn{
         align-items: stretch;
     }
 }
