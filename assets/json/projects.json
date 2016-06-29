@@ -1,0 +1,32 @@
+"projects": [
+"architektoniczne":
+[
+        {
+            "projectName": "Projekt1",
+            "id": 1,
+            "imageUrl": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city1.jpg",
+            "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb)."
+    },
+        {
+            "projectName": "Projekt2",
+            "id": 2,
+            "imageUrl": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city1.jpg",
+            "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb)."
+    }
+],
+"urbanistyczne":
+[
+        {
+            "projectName": "Projekt1",
+            "id": 1,
+            "imageUrl": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city1.jpg",
+            "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb)."
+    },
+        {
+            "projectName": "Projekt2",
+            "id": 2,
+            "imageUrl": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city1.jpg",
+            "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb)."
+    }
+]
+]
