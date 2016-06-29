@@ -16,11 +16,25 @@ FONTS
     src: url('../fonts/basictitlefont.ttf');
 }
 
+@font-face {
+    font-family: Bebas;
+    src: url('../fonts/bebas.ttf');
+}
+
 html,
 body {
     height: 100%;
     min-height: 100%;
     width: 100%;
+}
+
+body{
+    background-color: transparent;
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .container-fluid {
@@ -54,8 +68,8 @@ body {
 }
 
 #mainContentColumn {
-    background-color: #857A7A;
     overflow-y: scroll;
+    font-family: Bebas;
 }
 
 
@@ -98,7 +112,8 @@ NAVIGATION
 .sidebar-nav .navbar-header a {
     padding-top: 20%;
     outline: none;
-    font-family: BasicTitle;
+    font-family: Bebas;
+    color: brown;
     font-size: 30px;
 }
 
@@ -125,7 +140,7 @@ PROJECTS VIEW
 */
 
 .image-block {
-    border: 1px solid #2A375C;
+    border: 1px solid white;
     background-color: rgba(3, 3, 3, 0.0);
     padding: 0px;
     margin: 0px;
@@ -210,7 +225,7 @@ MEDIA QUERIES
 
 @media(max-width: 1100px) {
     .sidebar-nav .navbar-header a{
-        font-size: 26px;
+        font-size: 25px;
 
     }
     .sidebar-nav .navbar-nav a {
