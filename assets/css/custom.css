@@ -4,6 +4,18 @@ BLOBAL STYLES
 ---------------------------------------------------
 */
 
+
+/*
+---------------------------------------------------
+FONTS
+---------------------------------------------------
+*/
+
+@font-face {
+    font-family: BasicTitle;
+    src: url('../fonts/basictitlefont.ttf');
+}
+
 html,
 body {
     height: 100%;
@@ -36,13 +48,13 @@ body {
 }
 
 #navigationColumn {
-    background-color: #2A375C;
+    background-color: #1B1717;
     align-items: center;
     font-style: italic;
 }
 
 #mainContentColumn {
-    background-color: #EBEFFA;
+    background-color: #857A7A;
     overflow-y: scroll;
 }
 
@@ -54,29 +66,44 @@ NAVIGATION
 */
 
 /* Default */
-.sidebar-nav .navbar-nav a{
+
+.sidebar-nav .navbar-nav a {
     color: white;
-    font-family: sans-serif;
+    font-family: BasicTitle;
     outline: none;
 }
 
+
 /* Hover */
-.sidebar-nav .navbar-nav > li > a:hover, .sidebar-nav .navbar-nav > li > a:focus {
+
+.sidebar-nav .navbar-nav > li > a:hover,
+.sidebar-nav .navbar-nav > li > a:focus {
     color: crimson;
     background-color: transparent;
 }
 
-/* Active */
-.sidebar-nav .navbar-nav > .active > a, .sidebar-nav .navbar-nav > .active >
-a:hover, .sidebar-nav .navbar-nav > .active > a:focus {
-    color: yellow;
 
+/* Active */
+
+.sidebar-nav .navbar-nav > .active > a,
+.sidebar-nav .navbar-nav > .active > a:hover,
+.sidebar-nav .navbar-nav > .active > a:focus {
+    color: yellow;
 }
-.sidebar-nav .navbar-header{
-    height:100%;
+
+.sidebar-nav .navbar-header {
+    height: 60%;
 }
-.sidebar-nav .navbar-header a{
+
+.sidebar-nav .navbar-header a {
+    padding-top: 20%;
     outline: none;
+    font-family: BasicTitle;
+    font-size: 30px;
+}
+
+#navList{
+    padding-top: 20%;
 }
 
 .icon-bar {
@@ -122,8 +149,6 @@ PROJECTS VIEW
 }
 
 
-
-
 /*
 ---------------------------------------------------
 MEDIA QUERIES
@@ -133,7 +158,9 @@ MEDIA QUERIES
 
 /* Portrait and landscape phone */
 
-@media(max-width: 480px) {}
+@media(max-width: 480px) {
+
+}
 
 
 /* Landscape phone to portrait tablet */
@@ -149,7 +176,17 @@ MEDIA QUERIES
         align-items: stretch;
     }
     .sidebar-nav .navbar-header {
-        height:auto;
+        height: auto;
+    }
+    .sidebar-nav .navbar-header a{
+        font-size: 22px;
+        padding-top: 20px;
+    }
+    .sidebar-nav .navbar-nav a {
+       font-size: 14px;
+    }
+    #navList{
+        padding-top: 0;
     }
     #mainContentColumn {
         overflow-y: auto;
@@ -159,19 +196,83 @@ MEDIA QUERIES
 
 /* Up to small desktop */
 
-@media(max-width: 979px) {}
+@media(max-width: 979px) {
+    .sidebar-nav .navbar-header a{
+        font-size: 24px;
+    }
+    .sidebar-nav .navbar-nav a {
+        font-size: 20px;
+    }
+}
 
 
 /*Large desktop */
 
 @media(max-width: 1100px) {
-    #navigationColumn{
+    .sidebar-nav .navbar-header a{
+        font-size: 26px;
+
+    }
+    .sidebar-nav .navbar-nav a {
         font-size: 22px;
+
     }
 }
 
-@media(min-width: 1250px) {
-    #navigationColumn{
+@media(min-width: 1100px) {
+    .sidebar-nav .navbar-header a{
         font-size: 26px;
+
+    }
+    .sidebar-nav .navbar-nav a {
+        font-size: 22px;
+
+    }
+}
+
+@media(min-width: 1350px) {
+    .sidebar-nav .navbar-header a{
+        font-size: 30px;
+
+    }
+    .sidebar-nav .navbar-nav a {
+        font-size: 26px;
+    }
+}
+
+@media(min-width: 1450px) {
+    .sidebar-nav .navbar-header a{
+        font-size: 34px;
+
+    }
+    .sidebar-nav .navbar-nav a {
+        font-size: 28px;
+    }
+}
+
+@media(min-width: 1550px) {
+    .sidebar-nav .navbar-header a{
+        font-size: 38px;
+    }
+    .sidebar-nav .navbar-nav a {
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 1750px) {
+    .sidebar-nav .navbar-header a{
+        font-size: 42px;
+    }
+    .sidebar-nav .navbar-nav a {
+        font-size: 32px;
+    }
+}
+
+@media(min-width: 2000px) {
+    .sidebar-nav .navbar-header a{
+        font-size: 46px;
+    }
+    .sidebar-nav .navbar-nav a {
+        font-size: 36px;
     }
 }
