@@ -71,7 +71,7 @@ PROJECTS VIEW
 */
 
 .image-block {
-    border: 3px solid transparent;
+    border: 1px solid #2A375C;
     background-color: rgba(3, 3, 3, 0.0);
     padding: 0px;
     margin: 0px;
@@ -94,11 +94,7 @@ PROJECTS VIEW
     color: white;
 }
 
-#imageTiles {
-    min-height: 100%;
-    width: 100%;
-    height: 100%;
-}
+
 
 
 /*
