@@ -8,23 +8,29 @@ html,
 body {
     height: 100%;
     min-height: 100%;
+    width: 100%;
 }
 
 .container-fluid {
     height: 100%;
     min-height: 100%;
+    width: 100%;
 }
 
-.row {
+#mainRow {
+    height: 100%;
+}
+
+#innerRow {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    height: 100%
 }
 
-.row > [class*='col-'] {
+#innerRow > [class*='col-'] {
     display: flex;
     flex-direction: column;
 }
@@ -36,8 +42,8 @@ body {
 
 #mainContentColumn {
     background-color: #EBEFFA;
+    overflow-y: scroll;
 }
-
 
 
 /*
@@ -45,6 +51,7 @@ body {
 NAVIGATION
 ---------------------------------------------------
 */
+
 .icon-bar {
     background-color: black;
 }
@@ -62,6 +69,7 @@ MAIN CONTENT
 PROJECTS VIEW
 ---------------------------------------------------
 */
+
 .image-block {
     border: 3px solid transparent;
     background-color: rgba(3, 3, 3, 0.0);
@@ -86,11 +94,11 @@ PROJECTS VIEW
     color: white;
 }
 
-#imageTiles{
-  width: 100%;
-  height: 100%;
+#imageTiles {
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
 }
-
 
 
 /*
@@ -108,13 +116,13 @@ MEDIA QUERIES
 /* Landscape phone to portrait tablet */
 
 @media(max-width: 750px) {
-    .row {
+    #innerRow {
         display: -webkit-box;
         display: -ms-flexbox;
         display: block;
         flex-wrap: wrap;
     }
-    #navigationColumn{
+    #navigationColumn {
         align-items: stretch;
     }
 }
@@ -122,17 +130,11 @@ MEDIA QUERIES
 
 /* Up to small desktop */
 
-@media(max-width: 979px) {
-
-}
+@media(max-width: 979px) {}
 
 
 /*Large desktop */
 
-@media(max-width: 1100px) {
+@media(max-width: 1100px) {}
 
-}
-
-@media(min-width: 1150px) {
-
-}
+@media(min-width: 1150px) {}

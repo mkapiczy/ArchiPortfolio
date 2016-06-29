@@ -8,80 +8,61 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
     <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/bootstrap.min.css" />
-
-    <script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
-    <script type="text/javascript" src="assets/libs/bootstrap/ui-bootstrap-tpls-1.3.3.min.js"></script>
-    <script type="text/javascript" src="app/app.module.js"></script>
-
 </head>
 
 <body ng-app="archiApp">
 
     <div class="container-fluid" id="mainContainer">
 
-        <div class="row" id="mainRow">
-            <!-- SIDEBAR -->
-            <div class="col-xs-0 col-sm-2 col-md-2 col-lg-2" id="navigationColumn" ng-controller="NavBarCtrl">
-                <nav class="sidebar-nav" role="navigation">
-                    <div class="navbar" role="navigation">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button class="btn btn-navbar navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">Arni</a>
+        <div class="row-fluid" id="mainRow">
+
+            <div class="row" id="innerRow">
+
+                <!-- SIDEBAR -->
+                <div class="col-xs-0 col-sm-2 col-md-2 col-lg-2" id="navigationColumn" ng-controller="NavBarCtrl">
+                    <nav class="sidebar-nav" role="navigation">
+                        <div class="navbar" role="navigation">
+                            <!-- Brand and toggle - grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button class="btn btn-navbar navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Arni</a>
+                            </div>
+                            <!-- Actual navbar -->
+                            <div class="navbar-collapse collapse" uib-collapse="navCollapsed">
+                                <ul class="nav navbar-nav" id="navList">
+                                    <li><a ui-sref="home">Home</a></li>
+                                    <br>
+                                    <li><a ui-sref="projects">Projekty</a></li>
+                                    <br>
+                                    <li><a ui-sref="contact">Kontakt</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <!-- ACTUAL NAVBAR -->
-                        <div class="navbar-collapse collapse" uib-collapse="navCollapsed">
-                            <ul class="nav navbar-nav" id="navList">
-                                <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
-                                <br>
-                                <li><a ui-sref="projects" ui-sref-active="active">Projekty</a></li>
-                                <br>
-                                <li><a ui-sref="contact" ui-sref-active="active">Kontakt</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
+
+
+                <!-- MAIN CONTENT -->
+                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" id="mainContentColumn">
+                    <div ui-view></div>
+                </div>
+
             </div>
 
-            <!-- MAIN CONTENT -->
-            <div class="col-xs-0 col-sm-10 col-md-10 col-lg-10" id="mainContentColumn">
-
-              <div class="container-fluid" id="imageTiles">
-                  <div class="row-fluid">
-                      <h3>Arni Portfolio</h3>
-                      <div class="image-block col-sm-4" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city1.jpg) no-repeat center top;background-size:cover;">
-                          <p> Projekt 1 </p>
-                      </div>
-                      <div class="image-block col-sm-8" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city2.jpg) no-repeat center top;background-size:cover;">
-                          <p> Projekt 2 </p>
-                      </div>
-                      <div class="image-block col-sm-4" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city3.jpg) no-repeat center top;background-size:cover;">
-                          <p> Image Info </p>
-                      </div>
-                      <div class="image-block col-sm-4" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city4.jpg) no-repeat center top;background-size:cover;">
-                          <p> Image Info </p>
-                      </div>
-                      <div class="image-block col-sm-4" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city5.jpg) no-repeat center top;background-size:cover;">
-                          <p> Image Info </p>
-                      </div>
-                      <div class="image-block col-sm-8" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city6.jpg) no-repeat center top;background-size:cover;">
-                          <p> Image Info </p>
-                      </div>
-                      <div class="image-block col-sm-4" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city7.jpg) no-repeat center top;background-size:cover;">
-                          <p> Image Info </p>
-                      </div>
-                  </div>
-              </div>
-
-
-            </div>
         </div>
+
     </div>
+
+    <script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
+    <script type="text/javascript" src="assets/libs/angular/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="assets/libs/bootstrap/ui-bootstrap-tpls-1.3.3.min.js"></script>
+    <script type="text/javascript" src="app/app.module.js"></script>
+
 </body>
 
 </html>
