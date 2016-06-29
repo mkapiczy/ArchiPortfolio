@@ -1,8 +1,19 @@
-angular.module('archiApp', ['ui.bootstrap', 'ui.router', 'pascalprecht.translate'])
+var app = angular.module('archiApp', ['ui.bootstrap', 'ui.router', 'pascalprecht.translate']);
 
-.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', function ($stateProvider, $urlRouterProvider, $translateProvider) {
+app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', function($stateProvider, $urlRouterProvider, $translateProvider) {
 
+    /* TRANSLATIONS CONFIGURATION */
+    $translateProvider
+        .useStaticFilesLoader({
+            prefix: 'assets/translations/translations-',
+            suffix: '.json'
+        })
 
+    //.useLocalStorage();
+    .useMissingTranslationHandlerLog()
+    .preferredLanguage('pl');
+
+    /* ROUTING CONFIGURATION */
     $urlRouterProvider.otherwise('/projects');
 
     $stateProvider
@@ -19,3 +30,12 @@ angular.module('archiApp', ['ui.bootstrap', 'ui.router', 'pascalprecht.translate
             templateUrl: 'app/components/contact/contactView.html'
         })
 }]);
+
+app.controller('LanguageCtrl', ['$scope', '$translate',function($scope, $translate) {
+    $scope.changeLanguage = function(language) {
+        $translate.use(language);
+    }
+}]);
+
+
+//https://www.sitepoint.com/multilingual-support-for-angularjs/

@@ -1,13 +1,6 @@
 /*
 ---------------------------------------------------
-BLOBAL STYLES
----------------------------------------------------
-*/
-
-
-/*
----------------------------------------------------
-FONTS
+FONTS DECLARATION
 ---------------------------------------------------
 */
 
@@ -20,6 +13,13 @@ FONTS
     font-family: Bebas;
     src: url('../fonts/bebas.ttf');
 }
+
+/*
+---------------------------------------------------
+BLOBAL STYLES
+---------------------------------------------------
+*/
+
 
 html,
 body {
@@ -64,7 +64,6 @@ body{
 #navigationColumn {
     background-color: #1B1717;
     align-items: center;
-    font-style: italic;
 }
 
 #mainContentColumn {
@@ -122,7 +121,7 @@ NAVIGATION
 }
 
 .icon-bar {
-    background-color: black;
+    background-color: white;
 }
 
 
@@ -194,14 +193,15 @@ MEDIA QUERIES
         height: auto;
     }
     .sidebar-nav .navbar-header a{
-        font-size: 22px;
+        font-size: 20px;
         padding-top: 20px;
-    }
-    .sidebar-nav .navbar-nav a {
-       font-size: 14px;
     }
     #navList{
         padding-top: 0;
+    }
+    #navList a{
+      font-size: 12px;
+      align-content: center;
     }
     #mainContentColumn {
         overflow-y: auto;
@@ -216,7 +216,7 @@ MEDIA QUERIES
         font-size: 24px;
     }
     .sidebar-nav .navbar-nav a {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -229,7 +229,7 @@ MEDIA QUERIES
 
     }
     .sidebar-nav .navbar-nav a {
-        font-size: 22px;
+        font-size: 18px;
 
     }
 }
@@ -240,7 +240,7 @@ MEDIA QUERIES
 
     }
     .sidebar-nav .navbar-nav a {
-        font-size: 22px;
+        font-size: 20px;
 
     }
 }
@@ -251,7 +251,7 @@ MEDIA QUERIES
 
     }
     .sidebar-nav .navbar-nav a {
-        font-size: 26px;
+        font-size: 22px;
     }
 }
 
@@ -261,7 +261,7 @@ MEDIA QUERIES
 
     }
     .sidebar-nav .navbar-nav a {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
 
@@ -270,7 +270,7 @@ MEDIA QUERIES
         font-size: 38px;
     }
     .sidebar-nav .navbar-nav a {
-        font-size: 30px;
+        font-size: 26px;
     }
 }
 
@@ -279,7 +279,7 @@ MEDIA QUERIES
         font-size: 42px;
     }
     .sidebar-nav .navbar-nav a {
-        font-size: 32px;
+        font-size: 28px;
     }
 }
 
@@ -288,6 +288,6 @@ MEDIA QUERIES
         font-size: 46px;
     }
     .sidebar-nav .navbar-nav a {
-        font-size: 36px;
+        font-size: 30px;
     }
 }
