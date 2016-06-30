@@ -5,6 +5,12 @@ FONTS DECLARATION
 */
 
 @font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+@font-face {
     font-family: BasicTitle;
     src: url('../fonts/basictitlefont.ttf');
 }
@@ -14,12 +20,12 @@ FONTS DECLARATION
     src: url('../fonts/bebas.ttf');
 }
 
+
 /*
 ---------------------------------------------------
 BLOBAL STYLES
 ---------------------------------------------------
 */
-
 
 html,
 body {
@@ -28,7 +34,7 @@ body {
     width: 100%;
 }
 
-body{
+body {
     background-color: transparent;
     background: url('../img/background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -66,6 +72,18 @@ body{
     align-items: center;
 }
 
+#languageRow .pull-right {
+    height: 6px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+}
+
+#languageRow .pull-right i {
+    height: inherit;
+    font-size: 8px;
+}
+
 #mainContentColumn {
     overflow-y: scroll;
     font-family: Bebas;
@@ -77,6 +95,7 @@ body{
 NAVIGATION
 ---------------------------------------------------
 */
+
 
 /* Default */
 
@@ -116,7 +135,7 @@ NAVIGATION
     font-size: 30px;
 }
 
-#navList{
+#navList {
     padding-top: 20%;
 }
 
@@ -172,9 +191,7 @@ MEDIA QUERIES
 
 /* Portrait and landscape phone */
 
-@media(max-width: 480px) {
-
-}
+@media(max-width: 480px) {}
 
 
 /* Landscape phone to portrait tablet */
@@ -192,19 +209,22 @@ MEDIA QUERIES
     .sidebar-nav .navbar-header {
         height: auto;
     }
-    .sidebar-nav .navbar-header a{
+    .sidebar-nav .navbar-header a {
         font-size: 20px;
         padding-top: 20px;
     }
-    #navList{
+    #navList {
         padding-top: 0;
     }
-    #navList a{
-      font-size: 12px;
-      align-content: center;
+    #navList a {
+        font-size: 12px;
+        align-content: center;
     }
     #mainContentColumn {
         overflow-y: auto;
+    }
+    #languageRow .pull-right {
+        padding-right: 0px;
     }
 }
 
@@ -212,7 +232,7 @@ MEDIA QUERIES
 /* Up to small desktop */
 
 @media(max-width: 979px) {
-    .sidebar-nav .navbar-header a{
+    .sidebar-nav .navbar-header a {
         font-size: 24px;
     }
     .sidebar-nav .navbar-nav a {
@@ -224,31 +244,33 @@ MEDIA QUERIES
 /*Large desktop */
 
 @media(max-width: 1100px) {
-    .sidebar-nav .navbar-header a{
+    .sidebar-nav .navbar-header a {
         font-size: 25px;
-
     }
     .sidebar-nav .navbar-nav a {
         font-size: 18px;
-
     }
 }
 
 @media(min-width: 1100px) {
-    .sidebar-nav .navbar-header a{
+    .sidebar-nav .navbar-header a {
         font-size: 26px;
-
     }
     .sidebar-nav .navbar-nav a {
         font-size: 20px;
-
+    }
+    #languageRow .pull-right {
+        height: 15px;
+        padding-right: 0px;
+    }
+    #languageRow .pull-right i {
+        font-size: 10px;
     }
 }
 
 @media(min-width: 1350px) {
-    .sidebar-nav .navbar-header a{
+    .sidebar-nav .navbar-header a {
         font-size: 30px;
-
     }
     .sidebar-nav .navbar-nav a {
         font-size: 22px;
@@ -256,9 +278,8 @@ MEDIA QUERIES
 }
 
 @media(min-width: 1450px) {
-    .sidebar-nav .navbar-header a{
+    .sidebar-nav .navbar-header a {
         font-size: 34px;
-
     }
     .sidebar-nav .navbar-nav a {
         font-size: 24px;
@@ -266,7 +287,7 @@ MEDIA QUERIES
 }
 
 @media(min-width: 1550px) {
-    .sidebar-nav .navbar-header a{
+    .sidebar-nav .navbar-header a {
         font-size: 38px;
     }
     .sidebar-nav .navbar-nav a {
@@ -275,7 +296,7 @@ MEDIA QUERIES
 }
 
 @media(min-width: 1750px) {
-    .sidebar-nav .navbar-header a{
+    .sidebar-nav .navbar-header a {
         font-size: 42px;
     }
     .sidebar-nav .navbar-nav a {
@@ -284,7 +305,7 @@ MEDIA QUERIES
 }
 
 @media(min-width: 2000px) {
-    .sidebar-nav .navbar-header a{
+    .sidebar-nav .navbar-header a {
         font-size: 46px;
     }
     .sidebar-nav .navbar-nav a {

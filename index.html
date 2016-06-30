@@ -7,6 +7,7 @@
     <title>Archi Portfolio</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/flag-icon.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/bootstrap.min.css" />
 </head>
 
@@ -20,21 +21,25 @@
 
                 <!-- SIDEBAR -->
                 <div class="col-xs-0 col-sm-2 col-md-2 col-lg-2" id="navigationColumn" ng-controller="NavigationCtrl">
+
                     <nav class="sidebar-nav navbar" role="navigation">
 
                         <!-- Brand and toggle - grouped for better mobile display -->
                         <div class="navbar-header">
+                            <div class="row-fluid" id="languageRow" ng-controller="LanguageCtrl">
+                                <div class="pull-right">
+                                    <i class="flag-icon flag-icon-pl" ng-click="changeLanguage('pl')"></i> <i> / </i>   <i class="flag-icon flag-icon-gb" ng-click="changeLanguage('en')"></i>
+                                </div>
+                            </div>
                             <button class="btn btn-navbar navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+
                             <a class="navbar-brand" href="#">ArchiLogo</a>
-                            <ul ng-controller="LanguageCtrl">
-                                <li> <span ng-click="changeLanguage('pl')">pl</span> </li>
-                                <li> <span ng-click="changeLanguage('en')">en</span> </li>
-                            </ul>
+
                         </div>
                         <!-- Actual navbar -->
                         <div class="navbar-collapse collapse" uib-collapse="navCollapsed">
@@ -48,6 +53,7 @@
                         </div>
 
                     </nav>
+
                 </div>
 
 
