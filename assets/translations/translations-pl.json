@@ -1,3 +1,10 @@
 {
-    "CONTACT_TITLE":"Kontakt"
+    "PROJECTS_TITLE":"Projekty",
+    "ABOUT_ME_TITLE":"O mnie",
+    "CONTACT_TITLE":"Kontakt",
+
+    "PROJECTS_MENU":"Projekty",
+    "ABOUT_ME_MENU":"O mnie",
+    "CONTACT_MENU":"Kontakt"
+
 }

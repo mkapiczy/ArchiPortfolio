@@ -1,3 +1,9 @@
 {
-    "CONTACT_TITLE":"Contact"
+    "PROJECTS_TITLE":"Projects",
+    "ABOUT_ME_TITLE":"About me",
+    "CONTACT_TITLE":"Contact",
+
+    "PROJECTS_MENU":"Projects",
+    "ABOUT_ME_MENU":"About me",
+    "CONTACT_MENU":"Contact"
 }
