@@ -1,6 +1,6 @@
-var app = angular.module('archiApp', ['ui.bootstrap', 'ui.router', 'pascalprecht.translate']);
+var app = angular.module('archiApp', ['ui.bootstrap', 'ui.router', 'pascalprecht.translate', 'ngMockE2E', 'app.backend']);
 
-app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', function($stateProvider, $urlRouterProvider, $translateProvider) {
+app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', function ($stateProvider, $urlRouterProvider, $translateProvider) {
 
     /* TRANSLATIONS CONFIGURATION */
     $translateProvider
@@ -11,7 +11,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', functi
 
     //.useLocalStorage();
     .useMissingTranslationHandlerLog()
-    .preferredLanguage('pl');
+        .preferredLanguage('pl');
 
     /* ROUTING CONFIGURATION */
     $urlRouterProvider.otherwise('/projects');
@@ -31,8 +31,8 @@ app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', functi
         })
 }]);
 
-app.controller('LanguageCtrl', ['$scope', '$translate',function($scope, $translate) {
-    $scope.changeLanguage = function(language) {
+app.controller('LanguageCtrl', ['$scope', '$translate', function ($scope, $translate) {
+    $scope.changeLanguage = function (language) {
         $translate.use(language);
     }
 }]);

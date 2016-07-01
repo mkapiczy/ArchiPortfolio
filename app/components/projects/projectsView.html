@@ -1,24 +1,12 @@
-<div class="row-fluid" id="projectsView" ng-cloak>
+<div class="row-fluid" id="projectsView" ng-cloak ng-controller="projectsController">
     <h3 class="page-header text-center" data-translate="PROJECTS_TITLE"></h3>
-    <div class="image-block col-sm-6 col-md-4 col-lg-3" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city1.jpg) no-repeat center top;background-size:cover;">
-        <p> Projekt 1 </p>
+    <div id="projectsMenu">
+        <a class="col-md-3" ng-click="">architektoniczne</a><a class="col-md-3" ng-click="">urbanistyczne</a><a class="col-md-3" ng-click="">artystyczne</a><a class="col-md-3" ng-click="">inne</a>
+       <br><hr><br>
     </div>
-    <div class="image-block col-sm-6 col-md-4 col-lg-3" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city2.jpg) no-repeat center top;background-size:cover;">
-        <p> Projekt 2 </p>
-    </div>
-    <div class="image-block col-sm-6 col-md-4 col-lg-3" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city3.jpg) no-repeat center top;background-size:cover;">
-        <p> Image Info </p>
-    </div>
-    <div class="image-block col-sm-6 col-md-4 col-lg-3" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city4.jpg) no-repeat center top;background-size:cover;">
-        <p> Image Info </p>
-    </div>
-    <div class="image-block col-sm-6 col-md-4 col-lg-3" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city5.jpg) no-repeat center top;background-size:cover;">
-        <p> Image Info </p>
-    </div>
-    <div class="image-block col-sm-6 col-md-4 col-lg-3" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city6.jpg) no-repeat center top;background-size:cover;">
-        <p> Image Info </p>
-    </div>
-    <div class="image-block col-sm-6 col-md-4 col-lg-3" style="background: url(http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city7.jpg) no-repeat center top;background-size:cover;">
-        <p> Image Info </p>
+    <div ng-repeat="p in projects">
+        <div class="image-block col-sm-6 col-md-4 col-lg-3" style="background: url({{p.img}}) no-repeat center top;background-size:cover;">
+            <p> {{p.name}} </p>
+        </div>
     </div>
 </div>

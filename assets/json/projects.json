@@ -1,32 +1,73 @@
-"projects": [
-"architektoniczne":
 [
-        {
-            "projectName": "Projekt1",
-            "id": 1,
-            "imageUrl": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city1.jpg",
-            "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb)."
+    {
+        "name": "Projekt 1",
+        "description": "To jest projekt nr 1",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city1.jpg"
+},
+    {
+        "name": "Projekt 2",
+        "description": "To jest projekt nr 2",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city2.jpg"
+},
+    {
+        "name": "Projekt 3",
+        "description": "To jest projekt nr 3",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city3.jpg"
+},
+    {
+        "name": "Projekt 4",
+        "description": "To jest projekt nr 4",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city4.jpg"
     },
-        {
-            "projectName": "Projekt2",
-            "id": 2,
-            "imageUrl": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city1.jpg",
-            "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb)."
-    }
-],
-"urbanistyczne":
-[
-        {
-            "projectName": "Projekt1",
-            "id": 1,
-            "imageUrl": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city1.jpg",
-            "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb)."
+    {
+        "name": "Projekt 5",
+        "description": "To jest projekt nr 5",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city5.jpg"
     },
-        {
-            "projectName": "Projekt2",
-            "id": 2,
-            "imageUrl": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city1.jpg",
-            "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb)."
+    {
+        "name": "Projekt 6",
+        "description": "To jest projekt nr 6",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city6.jpg"
+    },
+    {
+        "name": "Projekt 7",
+        "description": "To jest projekt nr 7",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city7.jpg"
+    },
+    {
+        "name": "Projekt 1",
+        "description": "To jest projekt nr 1",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city1.jpg"
+    },
+    {
+        "name": "Projekt 2",
+        "description": "To jest projekt nr 2",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city2.jpg"
+    },
+    {
+        "name": "Projekt 3",
+        "description": "To jest projekt nr 3",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city3.jpg"
+    },
+    {
+        "name": "Projekt 4",
+        "description": "To jest projekt nr 4",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city4.jpg"
+    },
+    {
+        "name": "Projekt 5",
+        "description": "To jest projekt nr 5",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city5.jpg"
+    },
+    {
+        "name": "Projekt 6",
+        "description": "To jest projekt nr 6",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city6.jpg"
+    },
+    {
+        "name": "Projekt 7",
+        "description": "To jest projekt nr 7",
+        "img": "http://www.prepbootstrap.com/Content/images/template/ResponsiveImageTiles/city7.jpg"
     }
-]
+
 ]
