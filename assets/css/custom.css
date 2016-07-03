@@ -37,6 +37,9 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
 .container-fluid {
     height: 100%;
     min-height: 100%;
@@ -241,7 +244,7 @@ MEDIA QUERIES
         padding-bottom: 10px;
     }
 
-  
+
 }
 
 /*Large desktop */

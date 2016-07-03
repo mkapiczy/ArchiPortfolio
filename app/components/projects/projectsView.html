@@ -1,11 +1,18 @@
-<div class="row-fluid" id="projectsView" ng-cloak ng-controller="projectsController">
-    <h3 class="page-header text-center" data-translate="PROJECTS_TITLE"></h3>
-    <div id="projectsMenu">
-        <a class="col-xs-6 col-sm-6 col-md-3" ng-click="">architektoniczne</a><a class="col-xs-6 col-sm-6 col-md-3" ng-click="">urbanistyczne</a><a class="col-xs-6 col-sm-6 col-md-3" ng-click="">artystyczne</a><a class="col-xs-6 col-sm-6 col-md-3" ng-click="">inne</a>
-       <br><hr><br>
+<div class="row-fluid" id="projectsView" ng-controller="projectsController">
+    <h3 class="text-center" data-translate="PROJECTS_TITLE"></h3>
+    <hr class="blurred" />
+    <br />
+    <div id="projectsMenu" >
+        <a class="col-xs-4 col-sm-4 col-md-2" ng-repeat="pType in projectsTypes" ng-click="selectProjectType(pType)" ng-cloak>{{pType.name}}</a>
     </div>
-    <div ng-repeat="p in projects">
-        <div class="image-block col-sm-6 col-md-4 col-lg-3" style="background: url({{p.img}}) no-repeat center top;background-size:cover;">
+    <div class="visible-xs visible-sm">
+        <br class="breakLine" />
+    </div>
+    <br />
+    <hr class="blurred" />
+    <br />
+    <div>
+        <div class="image-block col-sm-6 col-md-4 col-lg-3" ng-repeat="p in filteredProjects = (projects | projectsFilter:selectedProjectType)" style="background: url({{p.img}}) no-repeat center top;background-size:cover;">
             <p> {{p.name}} </p>
         </div>
     </div>
