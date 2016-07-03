@@ -5,10 +5,10 @@ angular.module('archiApp')
 
         $scope.projects = [];
         $scope.projectsTypes = [];
-        $scope.selectedProjectType =   {
-              id: 0,
-              name: 'wszystkie'
-          };
+        $scope.selectedProjectType = {
+            id: 0,
+            name: 'ALL'
+        };
         $scope.getProjects = function() {
             projectsService.fetchProjects()
                 .then(
@@ -26,12 +26,6 @@ angular.module('archiApp')
                 .then(
                     function(data) {
                         $scope.projectsTypes = data;
-                        $scope.projectsTypes.unshift(
-                          {
-                              id: 0,
-                              name: 'wszystkie'
-                          }
-                        )
                     },
                     function(errResponse) {
                         $log.console.error(errResponse);

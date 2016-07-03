@@ -2,8 +2,8 @@
     <h3 class="text-center" data-translate="PROJECTS_TITLE"></h3>
     <hr class="blurred" />
     <br />
-    <div id="projectsMenu" >
-        <a class="col-xs-4 col-sm-4 col-md-2" ng-repeat="pType in projectsTypes" ng-click="selectProjectType(pType)" ng-cloak>{{pType.name}}</a>
+    <div id="projectsMenu">
+        <a class="col-xs-4 col-sm-4 col-md-2" ng-repeat="pType in projectsTypes" ng-click="selectProjectType(pType)" data-translate="PROJECT_TYPE_{{pType.name}}" ng-cloak></a>
     </div>
     <div class="visible-xs visible-sm">
         <br class="breakLine" />

@@ -1,0 +1,22 @@
+[
+    {
+        "id":0,
+        "name":"ALL"
+},
+    {
+      "id":1,
+      "name":"ARCHI"
+},
+    {
+      "id":2,
+      "name":"URBAN"
+},
+    {
+      "id":3,
+      "name":"ARTISTIC"
+    },
+    {
+      "id":4,
+      "name":"OTHER"
+    }
+]
