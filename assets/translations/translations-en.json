@@ -22,5 +22,5 @@
     "CONTACT_FORM_PLACEHOLDER_NAME": "Name and surname",
     "CONTACT_FORM_PLACEHOLDER_EMAIL": "mail@mail.com",
     "CONTACT_FORM_PLACEHOLDER_MESSAGE": "Message",
-    "CONTACT_FORM_PLACEHOLDER_NAME": "Your answer"
+    "CONTACT_FORM_PLACEHOLDER_CAPTCHA": "Your answer"
 }
