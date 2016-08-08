@@ -37,6 +37,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
 }
@@ -63,6 +64,7 @@ body {
 #navigationColumn {
     background-color: #1B1717;
     align-items: center;
+    padding-bottom: 0%;
 }
 #languageRow .pull-right {
     height: 6px;
@@ -77,11 +79,16 @@ body {
 #mainContentColumn {
     overflow-y: scroll;
     font-family: Bebas;
+    margin-bottom: 40px;
+
 }
 #myFooter {
     background-color: #1B1717;
-    color: white;
+    min-height: 40px;
+    height: 40px;
 }
+
+
 
 /*
 ---------------------------------------------------
@@ -145,6 +152,7 @@ PROJECTS VIEW
     padding-bottom: 10px;
     color: red;
 }
+
 
 /*
 ---------------------------------------------------
