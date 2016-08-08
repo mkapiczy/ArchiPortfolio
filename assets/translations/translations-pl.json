@@ -1,16 +1,27 @@
 {
-    "PROJECTS_TITLE":"Projekty",
-    "ABOUT_ME_TITLE":"O mnie",
-    "CONTACT_TITLE":"Kontakt",
+    "PROJECTS_TITLE": "Projekty",
+    "PROJECTS_MENU": "Projekty",
 
-    "PROJECTS_MENU":"Projekty",
-    "ABOUT_ME_MENU":"O mnie",
-    "CONTACT_MENU":"Kontakt",
+    "PROJECT_TYPE_ALL": "Wszystkie",
+    "PROJECT_TYPE_ARCHI": "Architektoniczne",
+    "PROJECT_TYPE_URBAN": "Urbanistyczne",
+    "PROJECT_TYPE_ARTISTIC": "Artystyczne",
+    "PROJECT_TYPE_OTHER": "Inne",
 
-    "PROJECT_TYPE_ALL":"Wszystkie",
-    "PROJECT_TYPE_ARCHI":"Architektoniczne",
-    "PROJECT_TYPE_URBAN":"Urbanistyczne",
-    "PROJECT_TYPE_ARTISTIC":"Artystyczne",
-    "PROJECT_TYPE_OTHER":"Inne"
+    "ABOUT_ME_TITLE": "O mnie",
+    "ABOUT_ME_MENU": "O mnie",
+
+    "CONTACT_TITLE": "Kontakt",
+    "CONTACT_MENU": "Kontakt",
+
+    "CONTACT_FORM_NAME": "Imię i nazwisko",
+    "CONTACT_FORM_EMAIL": "Adres email",
+    "CONTACT_FORM_MESSAGE": "Wiadomość",
+    "CONTACT_FORM_CAPTCHA": "2+3=?",
+
+    "CONTACT_FORM_PLACEHOLDER_NAME":"Imie i nazwisko",
+    "CONTACT_FORM_PLACEHOLDER_EMAIL":"mail@mail.com",
+    "CONTACT_FORM_PLACEHOLDER_MESSAGE":"Wiadomość",
+    "CONTACT_FORM_PLACEHOLDER_CAPTCHA":"Twoja odpowiedź"
 
 }

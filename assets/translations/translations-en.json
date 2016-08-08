@@ -11,5 +11,16 @@
     "PROJECT_TYPE_ARCHI": "Architectural",
     "PROJECT_TYPE_URBAN": "Urban",
     "PROJECT_TYPE_ARTISTIC": "Artistic",
-    "PROJECT_TYPE_OTHER": "Other"
+    "PROJECT_TYPE_OTHER": "Other",
+
+    "CONTACT_FORM_NAME": "Name",
+    "CONTACT_FORM_EMAIL": "Email address",
+    "CONTACT_FORM_MESSAGE": "Message",
+    "CONTACT_FORM_CAPTCHA": "2+3=?",
+
+
+    "CONTACT_FORM_PLACEHOLDER_NAME": "Name and surname",
+    "CONTACT_FORM_PLACEHOLDER_EMAIL": "mail@mail.com",
+    "CONTACT_FORM_PLACEHOLDER_MESSAGE": "Message",
+    "CONTACT_FORM_PLACEHOLDER_NAME": "Your answer"
 }
