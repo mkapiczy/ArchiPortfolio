@@ -38,7 +38,7 @@ body {
     background-size: cover;
 }
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
+    display: none !important;
 }
 .container-fluid {
     height: 100%;
@@ -77,6 +77,10 @@ body {
 #mainContentColumn {
     overflow-y: scroll;
     font-family: Bebas;
+}
+#myFooter {
+    background-color: #1B1717;
+    color: white;
 }
 
 /*
@@ -182,7 +186,6 @@ hr {
     margin: 50px 0 5px;
 }
 
-
 /*
 ---------------------------------------------------
 MEDIA QUERIES
@@ -243,8 +246,6 @@ MEDIA QUERIES
     #projectsMenu a {
         padding-bottom: 10px;
     }
-
-
 }
 
 /*Large desktop */
