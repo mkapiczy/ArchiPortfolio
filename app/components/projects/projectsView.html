@@ -14,7 +14,7 @@
     <hr class="blurred"/>
     <br/>
     <div id="projectsTilesContainer">
-        <div class="image-block col-sm-6 col-md-4 col-lg-3" ng-repeat="p in filteredProjects = (projects | projectsFilter:selectedProjectType)" style="background: url({{p.img}}) no-repeat center top;background-size:cover;">
+        <div class="image-block col-sm-6 col-md-4 col-lg-3 page page-home" ng-repeat="p in filteredProjects = (projects | projectsFilter:selectedProjectType)" ng-class="toggle" style="background: url({{p.img}}) no-repeat center top;background-size:cover;">
             <p>
                 {{p.name}}
             </p>

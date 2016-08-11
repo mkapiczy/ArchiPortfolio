@@ -1,0 +1,247 @@
+/**https://github.com/daneden/animate.css/tree/master/source*//
+
+/* BASE STYLES
+============================================================================= */
+html         {  }
+.page        {
+
+}
+.animate-enter,
+.animate-leave
+{
+    -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+}
+
+.animate-enter.animate-enter-active,
+.animate-leave {
+    opacity: 1;
+    top: 0;
+    height: 30px;
+}
+
+.animate-leave.animate-leave-active,
+.animate-enter {
+    opacity: 0;
+    top: -50px;
+    height: 0px;
+}
+
+
+/* PAGES
+============================================================================= */
+.page-home         { }
+.page-about     {  }
+.page-contact     { }
+
+/* ANIMATIONS
+============================================================================= */
+
+.page.ng-leave     { z-index:9999; }
+.page.ng-enter     { z-index:8888; }
+
+/* page specific animations ------------------------ */
+
+/* home -------------------------- */
+/*.page-home.ng-leave         {
+    -webkit-transform-origin: 0% 0%;
+    -webkit-animation: rotateFall 1s both ease-in;
+    -moz-transform-origin: 0% 0%;
+    -moz-animation: rotateFall 1s both ease-in;
+    transform-origin: 0% 0%;
+    animation: rotateFall 1s both ease-in;
+}*/
+.page-home.ng-enter        {
+    -webkit-animation:zoomIn 0.75s both ease-in;
+    -moz-animation:zoomIn 0.75s both ease-in;
+    animation:zoomIn 0.75s both ease-in;
+}
+
+.page-home.ng-leave        {
+    -webkit-animation:zoomOut 0.7s both ease-in;
+    -moz-animation:zoomOut 0.7s both ease-in;
+    animation:zoomOut 0.7s both ease-in;
+}
+
+.page-home.ng-move{
+  -webkit-transition: 1s linear all;
+ -moz-transition: 1s linear all;
+ -o-transition: 1s linear all;
+ transition: 1s linear all;
+ opacity:0.5;
+ position:relative;
+}
+
+.pahe-home.ng-move-active{
+opacity:1;
+}
+
+/* about ------------------------ */
+/*.page-about.ng-leave        {
+    -webkit-animation:slideOutLeft 0.5s both ease-in;
+    -moz-animation:slideOutLeft 0.5s both ease-in;
+    animation:slideOutLeft 0.5s both ease-in;
+}*/
+.page-about.ng-enter         {
+    -webkit-animation:slideInRight 0.5s both ease-in;
+    -moz-animation:slideInRight 0.5s both ease-in;
+    animation:slideInRight 0.5s both ease-in;
+}
+
+/* contact ---------------------- */
+.page-contact.ng-leave      {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation: rotateOutNewspaper .5s both ease-in;
+    -moz-transform-origin: 50% 50%;
+    -moz-animation: rotateOutNewspaper .5s both ease-in;
+    transform-origin: 50% 50%;
+    animation: rotateOutNewspaper .5s both ease-in;
+}
+.page-contact.ng-enter         {
+    -webkit-animation:slideInUp 0.5s both ease-in;
+    -moz-animation:slideInUp 0.5s both ease-in;
+    animation:slideInUp 0.5s both ease-in;
+}
+
+@keyframes zoomOutDown {
+  40% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+    transform-origin: center bottom;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@keyframes zoomOutRight {
+  40% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(.1) translate3d(2000px, 0, 0);
+    transform-origin: right center;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* rotate and fall */
+@-webkit-keyframes rotateFall {
+    0% { -webkit-transform: rotateZ(0deg); }
+    20% { -webkit-transform: rotateZ(10deg); -webkit-animation-timing-function: ease-out; }
+    40% { -webkit-transform: rotateZ(17deg); }
+    60% { -webkit-transform: rotateZ(16deg); }
+    100% { -webkit-transform: translateY(100%) rotateZ(17deg); }
+}
+@-moz-keyframes rotateFall {
+    0% { -moz-transform: rotateZ(0deg); }
+    20% { -moz-transform: rotateZ(10deg); -moz-animation-timing-function: ease-out; }
+    40% { -moz-transform: rotateZ(17deg); }
+    60% { -moz-transform: rotateZ(16deg); }
+    100% { -moz-transform: translateY(100%) rotateZ(17deg); }
+}
+@keyframes rotateFall {
+    0% { transform: rotateZ(0deg); }
+    20% { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40% { transform: rotateZ(17deg); }
+    60% { transform: rotateZ(16deg); }
+    100% { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* scale up */
+@keyframes scaleUp {
+    from         { opacity: 0.3; transform: scale(0.8); }
+}
+@-moz-keyframes scaleUp {
+    from         { opacity: 0.3; -moz-transform: scale(0.8); }
+}
+@-webkit-keyframes scaleUp {
+    from         { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+    from     { transform:translateX(100%); }
+    to         { transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+    from     { -moz-transform:translateX(100%); }
+    to         { -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+    from     { -webkit-transform:translateX(100%); }
+    to         { -webkit-transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+    from     { transform:translateY(100%); }
+    to         { transform: translateY(0); }
+}
+@-moz-keyframes slideInUp {
+    from     { -moz-transform:translateY(100%); }
+    to         { -moz-transform: translateY(0); }
+}
+@-webkit-keyframes slideInUp {
+    from     { -webkit-transform:translateY(100%); }
+    to         { -webkit-transform: translateY(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to         { transform: translateX(-100%); }
+}
+@-moz-keyframes slideOutLeft {
+    to         { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes slideOutLeft {
+    to         { -webkit-transform: translateX(-100%); }
+}
+
+/* rotate out newspaper */
+@-webkit-keyframes rotateOutNewspaper {
+    to { -webkit-transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+@-moz-keyframes rotateOutNewspaper {
+    to { -moz-transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+@keyframes rotateOutNewspaper {
+    to { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}

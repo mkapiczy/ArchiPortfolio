@@ -1,4 +1,4 @@
-var app = angular.module('archiApp', ['ui.bootstrap', 'ui.router', 'pascalprecht.translate', 'ngMockE2E', 'app.backend']);
+var app = angular.module('archiApp', ['ui.bootstrap', 'ui.router', 'pascalprecht.translate', 'ngMockE2E', 'app.backend','ngAnimate']);
 
 app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', function ($stateProvider, $urlRouterProvider, $translateProvider) {
 
